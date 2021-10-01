@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Prata, serif;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/*********************************/
+/***********navigation************/
+/*********************************/
+
+.nav-bar {
+  position: fixed;
+  top: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-bar-menu {
+  background-color: rgba(255, 255, 255, 0.781);
+}
+.nav-bar p {
+  color: white;
+  font-family: Bonheur Royale, cursive;
+  font-size: 7rem;
+}
+
+.nav-bar-menu p {
+  color: black;
+}
+
+.btn-container {
+  display: flex;
+  gap: 3rem;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  font-family: Prata, serif;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.btn-menu {
+  color: black;
+}
+
+.btn:hover,
+.btn:active {
+  text-decoration: underline;
+}
+
+/*********************************/
+/***********main-page************/
+/*********************************/
+
+.hero-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3)),
+    url(/src/picture.png);
+  background-size: cover;
+}
+.presentation-text {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  margin: 10rem 0 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation-text h1 {
+  font-family: Prata, serif;
+  font-weight: normal;
+  font-size: 8rem;
+  color: white;
+}
+
+.presentation-text h3 {
+  font-family: Prata, serif;
+  font-weight: normal;
+  font-size: 3rem;
+  color: white;
+}
+
+/*********************************/
+/***********menu-page************/
+/*********************************/
+
+.menu-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu-container img {
+  margin-top: 17rem;
+}
+
+.menu {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu h2 {
+  color: #212529;
+  text-align: center;
+  font-size: 4rem;
+  margin: 3rem 0 3rem 0;
+}
+
+.product-item {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.product-title {
+  color: #212529;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.product-price {
+  font-size: 2rem;
+  color: #495057;
+  grid-column: 2;
+}
+.product-description {
+  font-size: 1.7rem;
+  color: #495057;
+  grid-row: span 2;
+}

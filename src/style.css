@@ -111,6 +111,7 @@
   text-align: center;
   font-size: 4rem;
   margin: 3rem 0 3rem 0;
+  border-bottom: 1px solid #495057;
 }
 
 .product-item {
@@ -118,6 +119,10 @@
   grid-template-columns: 1fr, 1fr;
   justify-content: space-between;
   margin-bottom: 3rem;
+}
+
+.product-item:last-child {
+  margin-bottom: 5rem;
 }
 
 .product-title {

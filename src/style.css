@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Prata, serif;
+  font-family: "raleway", sans-serif;
   box-sizing: border-box;
   font-size: 10px;
 }
@@ -39,7 +39,6 @@
 .btn {
   border: none;
   background-color: transparent;
-  font-family: Prata, serif;
   color: white;
   font-size: 2.5rem;
   cursor: pointer;
@@ -62,7 +61,7 @@
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url(/src/picture.png);
   background-size: cover;
 }
@@ -78,14 +77,12 @@
 }
 
 .presentation-text h1 {
-  font-family: Prata, serif;
   font-weight: normal;
   font-size: 8rem;
   color: white;
 }
 
 .presentation-text h3 {
-  font-family: Prata, serif;
   font-weight: normal;
   font-size: 3rem;
   color: white;
@@ -105,7 +102,7 @@
 }
 
 .menu {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -119,8 +116,8 @@
 .product-item {
   display: grid;
   grid-template-columns: 1fr, 1fr;
-  justify-content: center;
-  margin-bottom: 2rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .product-title {
@@ -128,11 +125,13 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+
 .product-price {
   font-size: 2rem;
   color: #495057;
   grid-column: 2;
 }
+
 .product-description {
   font-size: 1.7rem;
   color: #495057;

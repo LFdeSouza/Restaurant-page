@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Raleway:wght@400;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -17,25 +19,24 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.nav-bar-menu {
   background-color: rgba(255, 255, 255, 0.781);
 }
-.nav-bar p {
+
+.nav-bar-home {
+  background-color: transparent;
   color: white;
-  font-family: Bonheur Royale, cursive;
-  font-size: 7rem;
 }
 
-.nav-bar-menu p {
-  color: black;
+.nav-bar p {
+  font-family: Bonheur Royale, cursive;
+  font-size: 7rem;
 }
 
 .btn-container {
   display: flex;
   gap: 3rem;
 }
+
 .btn {
   border: none;
   background-color: transparent;
@@ -44,8 +45,8 @@
   cursor: pointer;
 }
 
-.btn-menu {
-  color: black;
+.btn-home {
+  color: white;
 }
 
 .btn:hover,

@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Raleway:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "raleway", sans-serif;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/*********************************/
+/***********navigation************/
+/*********************************/
+
+.nav-bar {
+  position: fixed;
+  top: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.781);
+}
+
+.nav-bar-home {
+  background-color: transparent;
+  color: white;
+}
+
+.nav-bar p {
+  font-family: Bonheur Royale, cursive;
+  font-size: 7rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.btn-home {
+  color: white;
+}
+
+.btn:hover,
+.btn:active {
+  text-decoration: underline;
+}
+
+/*********************************/
+/***********main-page************/
+/*********************************/
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(./images/home-image.jpg);
+  background-size: cover;
+  animation: fade-in 2s forwards;
+}
+
+.presentation-text {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  margin: 10rem 0 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation-text h1 {
+  font-weight: normal;
+  font-size: 8rem;
+  color: white;
+}
+
+.presentation-text h3 {
+  font-weight: normal;
+  font-size: 3rem;
+  color: white;
+}
+
+/*********************************/
+/***********menu-page************/
+/*********************************/
+
+.menu-container {
+  height: 100vh;
+  width: 100vw;
+  animation: fade-in 2s forwards;
+}
+
+.menu-container img {
+  margin-top: 17rem;
+}
+
+.menu {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.menu h2 {
+  color: #212529;
+  text-align: center;
+  font-size: 4rem;
+  margin: 3rem 0 3rem 0;
+  border-bottom: 1px solid #495057;
+}
+
+.product-item {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.product-item:last-child {
+  margin-bottom: 5rem;
+}
+
+.product-title {
+  color: #212529;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 2rem;
+  color: #495057;
+  grid-column: 2;
+}
+
+.product-description {
+  font-size: 1.7rem;
+  color: #495057;
+  grid-row: span 2;
+}
+
+/*********************************/
+/**********Contact-page***********/
+/*********************************/
+
+.contact-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fade-in 2s forwards;
+}
+
+.contact-title {
+  width: 50%;
+  margin: 0 auto;
+  color: #212529;
+  text-align: center;
+}
+
+.contact-title h1 {
+  margin-top: 20rem;
+  font-size: 7rem;
+  border-bottom: 1px dotted #495057;
+}
+
+.contact-title p {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+.location {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.location h2 {
+  color: #212529;
+  font-size: 3.5rem;
+}
+
+.location p {
+  color: #212529;
+  font-size: 2.5rem;
+}
+
+.contact-container img {
+  height: 40rem;
+  margin: 5rem auto;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

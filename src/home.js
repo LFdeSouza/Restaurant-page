@@ -1,5 +1,3 @@
-import "/src/images/home-image.jpg";
-
 function loadHomePage() {
   // container
   const home = document.createElement("div");

@@ -1,5 +1,3 @@
-import "/src/images/contact-image.jpg";
-
 function loadContactPage() {
   const contactContainer = document.createElement("div");
   contactContainer.classList.add("contact-container");
@@ -32,7 +30,7 @@ function loadContactPage() {
   location.appendChild(locationContinent);
 
   const contactImage = document.createElement("img");
-  contactImage.src = "/src/images/contact-image.jpg";
+  contactImage.src = "./images/contact-image.jpg";
   contactContainer.appendChild(contactImage);
 
   return contactContainer;

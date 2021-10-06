@@ -1,5 +1,3 @@
-import "/src/images/menu-image.jpg";
-
 const dinnerItems = [
   {
     item: "Duck on Orange",
@@ -77,7 +75,7 @@ function loadMenuPage() {
   document.body.appendChild(menuContainer);
 
   const menuPicture = document.createElement("img");
-  menuPicture.src = "/src/images/menu-image.jpg";
+  menuPicture.src = "./images/menu-image.jpg";
   menuContainer.appendChild(menuPicture);
 
   //menu

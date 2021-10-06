@@ -1,3 +1,7 @@
+import loadHomePage from "./home";
+import loadContactPage from "./contact";
+import loadMenuPage from "./menu";
+
 function loadNavBar(page) {
   const navBar = document.createElement("div");
   navBar.classList.add("nav-bar");
@@ -12,27 +16,51 @@ function loadNavBar(page) {
 
   const homeButton = document.createElement("button");
   homeButton.textContent = "Home";
+  homeButton.id = "home-button";
   homeButton.classList.add("btn");
 
   const menuButton = document.createElement("button");
   menuButton.textContent = "Menu";
+  menuButton.id = "menu-button";
   menuButton.classList.add("btn");
 
-  const aboutButton = document.createElement("button");
-  aboutButton.textContent = "About us";
-  aboutButton.classList.add("btn");
+  const contactButton = document.createElement("button");
+  contactButton.textContent = "Contact";
+  contactButton.id = "contact-button";
+  contactButton.classList.add("btn");
 
   btnContainer.appendChild(homeButton);
   btnContainer.appendChild(menuButton);
-  btnContainer.appendChild(aboutButton);
+  btnContainer.appendChild(contactButton);
   navBar.appendChild(btnContainer);
 
   if (page === "home") {
     navBar.classList.add("nav-bar-home");
     homeButton.classList.add("btn-home");
     menuButton.classList.add("btn-home");
-    aboutButton.classList.add("btn-home");
+    contactButton.classList.add("btn-home");
   }
+
+  //event home
+  homeButton.addEventListener("click", (e) => {
+    document.body.innerHTML = "";
+    loadHomePage();
+    loadNavBar("home");
+  });
+
+  //event menu
+  menuButton.addEventListener("click", (e) => {
+    document.body.innerHTML = "";
+    loadMenuPage();
+    loadNavBar();
+  });
+
+  //event contact
+  contactButton.addEventListener("click", (e) => {
+    document.body.innerHTML = "";
+    loadContactPage();
+    loadNavBar();
+  });
 
   return navBar;
 }

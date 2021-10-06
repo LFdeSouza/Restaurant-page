@@ -40,7 +40,6 @@
 .btn {
   border: none;
   background-color: transparent;
-  color: white;
   font-size: 2.5rem;
   cursor: pointer;
 }
@@ -58,14 +57,16 @@
 /***********main-page************/
 /*********************************/
 
-.hero-container {
+.home-container {
   position: relative;
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url(/src/picture.png);
+    url(/src/images/home-image.jpg);
   background-size: cover;
+  animation: fade-in 2s forwards;
 }
+
 .presentation-text {
   position: absolute;
   top: 35%;
@@ -96,6 +97,7 @@
 .menu-container {
   height: 100vh;
   width: 100vw;
+  animation: fade-in 2s forwards;
 }
 
 .menu-container img {
@@ -155,6 +157,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: fade-in 2s forwards;
 }
 
 .contact-title {
@@ -186,15 +189,25 @@
 
 .location h2 {
   color: #212529;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .location p {
   color: #212529;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .contact-container img {
-  height: 60rem;
-  margin: 10rem auto;
+  height: 40rem;
+  margin: 5rem auto;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
